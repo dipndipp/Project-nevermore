@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <img src="assets/nevermorelogo.png" alt="" />
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Activity</a></li>
+          <li><a href="regist.html">Registration</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <div class="login-form">
+        <form action="thankyou.html">
+          <img src="assets/nevermorelogo.png" alt="" class="logosection" />
+          <h1>Login</h1>
+          <div class="content">
+            <div class="input-field" id="kolom">
+              <input type="email" placeholder="Email" autocomplete="nope" />
+            </div>
+            <div class="input-field" id="kolom">
+              <input
+                type="password"
+                placeholder="Password"
+                autocomplete="new-password"
+              />
+            </div>
+            <div class="input-field" id="kolom">
+              <input
+                type="number"
+                placeholder="Phone Number"
+                autocomplete="nope"
+              />
+            </div>
+          </div>
+          <div class="action">
+            <button onclick="lanjut()">Register</button>
+            <button>Sign in</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script>
+    let form = document.querySelecter("form");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      return false;
+    });
+  </script>
+</html>
